@@ -2,7 +2,7 @@ import axios from 'axios'
 
 function requestWithAuthentication (accessKey) {
   return axios.create({
-    baseURL: '/',
+    baseURL: 'http://f-test.dalenta.tech',
     timeout: 3000,
     headers: {
       'x-access-token': accessKey
@@ -12,7 +12,7 @@ function requestWithAuthentication (accessKey) {
 
 function request () {
   return axios.create({
-    baseURL: '/',
+    baseURL: 'http://f-test.dalenta.tech',
     timeout: 3000,
     headers: {
       accesskey: btoa('frontEndTest123')
